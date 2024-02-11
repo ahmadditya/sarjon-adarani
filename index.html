@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Nubis Webpage Title</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    
+    <!-- Favicon  -->
+    <link rel="icon" href="images/LOGOOOOO.png">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarExample">
+    
+    <!-- Navigation -->
+    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/LOGOOOOO.PNG" style="width:5vh; height:5vh;" alt="alternative"></a> 
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text" href="index.html">Nubis</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#details">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">hasil suara</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Media</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="https://www.facebook.com/sarjonadarani/">Facebook</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="https://www.instagram.com/sarjonadarani/">Instagram</a></li>
+                            <!-- <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-solid-sm" href="https://docs.google.com/spreadsheets/d/1X8YBmAXIjhPsRrQS4tXCXXe3Fs4zNGFt0xQuDpjV9VY/edit#gid=1992329042">Lihat Hasil </a>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+      
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <div class="wrapper">
+                            <svg>
+                                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                                    SARJON ADARANI
+
+                                </text>
+                                 <p class="p-large">CALEG DPRD KABUPATEN GORONTALO</p>
+                            </svg>
+                        </div>
+                       <!-- Menampilkan Jam (Aktif) -->
+    <div id="clock"></div>
+        <script type="text/javascript">
+        <!--
+        function showTime() {
+            var a_p = "";
+            var today = new Date();
+            var curr_hour = today.getHours();
+            var curr_minute = today.getMinutes();
+            var curr_second = today.getSeconds();
+            if (curr_hour < 12) {
+                a_p = "AM";
+            } else {
+                a_p = "PM";
+            }
+            if (curr_hour == 0) {
+                curr_hour = 12;
+            }
+            if (curr_hour > 12) {
+                curr_hour = curr_hour - 12;
+            }
+            curr_hour = checkTime(curr_hour);
+            curr_minute = checkTime(curr_minute);
+            curr_second = checkTime(curr_second);
+         document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+            }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+        setInterval(showTime, 500);
+        //-->
+          <!--
+            var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+            var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+            var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth();
+            var thisDay = date.getDay(),
+                thisDay = myDays[thisDay];
+            var yy = date.getYear();
+            var year = (yy < 1000) ? yy + 1900 : yy;
+            document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+        </script>
+
+        <!-- Menampilkan Hari, Bulan dan Tahun -->
+        <br>
+        <br>
+
+        
+
+                       
+                        <a class="btn-solid-lg" href="https://docs.google.com/spreadsheets/d/1X8YBmAXIjhPsRrQS4tXCXXe3Fs4zNGFt0xQuDpjV9VY/edit#gid=1992329042">LIHAT HASIL SUARA</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <center>
+                             <img class="img-fluid" src="images/254253142.png" width="350px" alt="alternative">
+                        </center>
+                       
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+<!-- 
+
+    <div id="services" class="cards-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Explore our services</h2>
+                </div> 
+            </div> 
+            <div class="row">
+                <div class="col-lg-12">
+                    
+            
+                    <div class="card">
+                        <div class="card-icon">
+                            <span class="fas fa-headphones-alt"></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Analyse your product</h5>
+                            <p>Et blandit nisl libero at arcu. Donec ac lectus sed tellus mollis viverra. Nullam pharetra ante at nunc elementum</p>
+                            <a class="read-more no-line" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                        </div>
+                    </div>
+                 
+
+               
+                    <div class="card">
+                        <div class="card-icon red">
+                            <span class="far fa-clipboard"></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Evaluate opportunities</h5>
+                            <p>Vulputate nibh feugiat. Morbi pellent diam nec libero lacinia, sed ultrices velit scelerisque. Nunc placerat justo sem</p>
+                            <a class="read-more no-line" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                        </div>
+                    </div>
+                   
+
+                  
+                    <div class="card">
+                        <div class="card-icon green">
+                            <span class="far fa-comments"></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Find the influencers</h5>
+                            <p>Ety suscipit metus sollicitudin euqu isq imperdiet nibh nec magna tincidunt, nec pala vehicula neque sodales verum</p>
+                            <a class="read-more no-line" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                        </div>
+                    </div>
+                 
+
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+   
+ -->
+
+    <!-- Details 1 -->
+    <div id="details" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/sar.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <div class="section-title">haii</div>
+                        <h2>judul</h2>
+                        <p>isi kontent ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                         
+                        <a class="btn-solid-reg" href="https://www.facebook.com/sarjonadarani/">lihat Facebook</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+
+
+  
+
+
+    <!-- Features -->
+    <div id="features" class="accordion-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h2 class="h2-heading">HASIL PEMUNGUTAN SUARA DPRD 2024</h2>
+                    <p class="p-heading">*SUARA YANG TERDATA BERASAL DARI SELURUH TPS YANG TERLETAK DI DESA DAN KECAMATAN SE KABUPATEN GORONTALO YANG DI DATA OLEH TIM SARJON ANDARANI* </p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->   
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="accordion" id="accordionExample">
+                        
+                      <iframe width="340" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSqMs6ota25-Q_KLadarMACBlS9xUnoWj2XZ_94KOU9hfiTgxPmpwqogp55psVCFewaGg7Ym_XsfmhN/pubhtml?gid=1352748246&single=true"></iframe>
+
+                    </div> <!-- end of accordion -->
+                </div> <!-- end of col -->
+                <div class="col-xl-7">
+                    <div class="image-container">
+                         <iframe width="340" height="650" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSqMs6ota25-Q_KLadarMACBlS9xUnoWj2XZ_94KOU9hfiTgxPmpwqogp55psVCFewaGg7Ym_XsfmhN/pubhtml?gid=1992329042&single=true"></iframe>
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of accordion-1 -->
+    <!-- end of features -->
+
+
+
+    <!-- Customers -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>JUMLAH DPT <span class="blue">62679</span> KAB.GORONTALO</h4>
+                    <hr class="section-divider">
+
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="images/Logo-Gerindra-1.png" width="50px" alt="alternative">
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="images/Logo-Gerindra-1.png" width="50px" alt="alternative">
+
+                                </div>
+                                <div class="swiper-slide">
+                                     <img class="img-fluid" src="images/Logo-Gerindra-1.png" width="50px" alt="alternative">
+
+                                </div>
+                                <div class="swiper-slide">
+                                     <img class="img-fluid" src="images/Logo-Gerindra-1.png" width="50px" alt="alternative">
+
+                                </div>
+                                <div class="swiper-slide">
+                                     <img class="img-fluid" src="images/Logo-Gerindra-1.png" width="50px" alt="alternative">
+
+                                </div>
+                                <div class="swiper-slide">
+                                     <img class="img-fluid" src="images/Logo-Gerindra-1.png" width="50px" alt="alternative">
+
+                                </div>
+                            </div> <!-- end of swiper-wrapper -->
+                        </div> <!-- end of swiper container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of customers -->
+
+
+    <!-- Invitation -->
+    <div class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h2>lihat Realtime Hasil Suara</h2>
+                        <p class="p-large">PEMILIHAN CALEG DPRD KAB. GORONTALO DAPIL V 2024</p>
+
+                        <a class="btn-solid-lg" href="https://docs.google.com/spreadsheets/d/1X8YBmAXIjhPsRrQS4tXCXXe3Fs4zNGFt0xQuDpjV9VY/edit#gid=1992329042">LIHAT</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of invitation -->
+
+
+    <!-- Contact -->
+    <!--  -->
+
+
+    <!-- Footer -->
+    <div class="footer bg-gray">
+        <img class="decoration-circles" src="images/decoration-circles.png" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <img src="images/243182303_240190528119493_2649901436351635557_n.JPG" width="350px" border-radius="10px" alt="alternative">
+                   
+                    <div class="social-container">
+                        <span class="fa-stack">
+                            <a href="https://www.facebook.com/sarjonandarani/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        
+                       
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/sarjonandarani/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                       
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <ul class="list-unstyled li-space-lg p-small">
+                       
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <p class="p-small statement">Copyright © 2024 <a href="https://www.instagram.com/sia_ditz/">ahmad ditya</a></p>
+                </div> <!-- end of col -->
+
+                
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="images/up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+        
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
